@@ -83,7 +83,6 @@
             this.twilioSSIDBox.Name = "twilioSSIDBox";
             this.twilioSSIDBox.Size = new System.Drawing.Size(100, 20);
             this.twilioSSIDBox.TabIndex = 4;
-            this.twilioSSIDBox.Text = "ACd0dfdee5cbece2e6b4226715cc1b7312";
             // 
             // twilioTokenBox
             // 
@@ -91,7 +90,6 @@
             this.twilioTokenBox.Name = "twilioTokenBox";
             this.twilioTokenBox.Size = new System.Drawing.Size(100, 20);
             this.twilioTokenBox.TabIndex = 5;
-            this.twilioTokenBox.Text = "f3ddb423d44f0158ffdf245d0f865c47";
             // 
             // twilioNumberBox
             // 
@@ -99,7 +97,6 @@
             this.twilioNumberBox.Name = "twilioNumberBox";
             this.twilioNumberBox.Size = new System.Drawing.Size(100, 20);
             this.twilioNumberBox.TabIndex = 6;
-            this.twilioNumberBox.Text = "+19022004649";
             // 
             // button2
             // 
@@ -146,7 +143,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.sendMsg);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "SendSMS";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

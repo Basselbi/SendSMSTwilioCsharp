@@ -26,4 +26,3 @@ C:\Users\bassel\documents\visual studio 2015\Projects\SendSMSCharp\SendSMSCharp\
 C:\Users\bassel\documents\visual studio 2015\Projects\SendSMSCharp\SendSMSCharp\obj\Debug\SendSMSCharp.csproj.GenerateResource.Cache
 C:\Users\bassel\documents\visual studio 2015\Projects\SendSMSCharp\SendSMSCharp\obj\Debug\SendSMSCharp.exe
 C:\Users\bassel\documents\visual studio 2015\Projects\SendSMSCharp\SendSMSCharp\obj\Debug\SendSMSCharp.pdb
-C:\Users\bassel\documents\visual studio 2015\Projects\SendSMSCharp\SendSMSCharp\obj\Debug\SendSMSCharp.csprojResolveAssemblyReference.cache

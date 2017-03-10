@@ -38,6 +38,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.msgBOX = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.downloadResult = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // sendMsg
@@ -127,11 +128,22 @@
             this.comboBox1.TabIndex = 16;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
+            // downloadResult
+            // 
+            this.downloadResult.Location = new System.Drawing.Point(73, 279);
+            this.downloadResult.Name = "downloadResult";
+            this.downloadResult.Size = new System.Drawing.Size(104, 23);
+            this.downloadResult.TabIndex = 17;
+            this.downloadResult.Text = "Dowload logs";
+            this.downloadResult.UseVisualStyleBackColor = true;
+            this.downloadResult.Click += new System.EventHandler(this.downloadResult_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(475, 343);
+            this.Controls.Add(this.downloadResult);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.msgBOX);
             this.Controls.Add(this.button2);
@@ -162,6 +174,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox msgBOX;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button downloadResult;
     }
 }
 

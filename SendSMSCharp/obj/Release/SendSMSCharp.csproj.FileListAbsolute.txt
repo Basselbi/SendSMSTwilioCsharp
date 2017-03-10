@@ -24,3 +24,6 @@ C:\Users\bassel\documents\visual studio 2015\Projects\SendSMSCharp\SendSMSCharp\
 C:\Users\bassel\documents\visual studio 2015\Projects\SendSMSCharp\SendSMSCharp\obj\Release\SendSMSCharp.exe
 C:\Users\bassel\documents\visual studio 2015\Projects\SendSMSCharp\SendSMSCharp\obj\Release\SendSMSCharp.pdb
 C:\Users\bassel\documents\visual studio 2015\Projects\SendSMSCharp\SendSMSCharp\obj\Release\SendSMSCharp.csprojResolveAssemblyReference.cache
+C:\Users\bassel\documents\visual studio 2015\Projects\SendSMSCharp\SendSMSCharp\bin\Release\HttpServer.dll
+C:\Users\bassel\documents\visual studio 2015\Projects\SendSMSCharp\SendSMSCharp\bin\Release\HttpServer.pdb
+C:\Users\bassel\documents\visual studio 2015\Projects\SendSMSCharp\SendSMSCharp\bin\Release\HttpServer.xml

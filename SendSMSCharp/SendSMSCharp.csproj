@@ -96,6 +96,8 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RequestBin.cs" />
+    <Compile Include="ResultToCSharp.cs" />
+    <Compile Include="TwilioResult.cs" />
     <Compile Include="TwilioSetting.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -159,6 +161,9 @@
   <ItemGroup>
     <Content Include="HTMLPage1.html" />
     <None Include="Resources\sms-alt-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SMSLogs\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

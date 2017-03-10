@@ -14,19 +14,23 @@ using NUnit.Framework.Constraints;
 using RestSharp.Extensions;
 using Twilio;
 using Twilio.Clients;
-using Twilio.Rest.Api.V2010.Account;
 using Twilio.Rest.Api.V2010.Account.Message;
+using Twilio.Rest.Chat.V1.Service.Channel;
 using Twilio.Types;
+using MessageResource = Twilio.Rest.Api.V2010.Account.MessageResource;
 
 
 namespace SendSMSCharp
 {
+    
     public partial class Form1 : Form
     {
         protected bool isUploaded = false;
         protected List<string> listNumeroTelephon = new List<string>();
         private string path = "";
         private string s = "";
+        private string ssid = "";
+        private string token = "";
         public Form1()
         {
             InitializeComponent();
@@ -56,8 +60,8 @@ namespace SendSMSCharp
 
         private void button1_Click(object sender, EventArgs e)
         {
-             string ssid = twilioSSIDBox.Text;
-             string token = twilioTokenBox.Text;
+              ssid = twilioSSIDBox.Text;
+              token = twilioTokenBox.Text;
              string number = twilioNumberBox.Text;
            
             
@@ -107,17 +111,22 @@ namespace SendSMSCharp
        
         public void sendSMS(string ssid, string token , string fromNumber, List<string>TOnumbersList ,string msgBody )
         {
-           TwilioClient.Init(ssid, token);
-           
+           TwilioClient.Init("ACd0dfdee5cbece2e6b4226715cc1b7312", "f3ddb423d44f0158ffdf245d0f865c47");
+
+            //var twilio = new TwilioRestClient("ACd0dfdee5cbece2e6b4226715cc1b7312", "f3ddb423d44f0158ffdf245d0f865c47");
+
+
             foreach (var toNumber in TOnumbersList)
             {
-             var message = MessageResource.Create(
-             to: new PhoneNumber(toNumber),
-             from: new PhoneNumber(fromNumber),
-             body: msgBody,
-             provideFeedback: true,
-             statusCallback: new Uri("https://miniscule-pull.000webhostapp.com/api.php"));// <---- Un lien ou le API envoi une requetes pour mettre a jour les status des sms s'il sont recu ou failed
-            
+
+
+                var message = MessageResource.Create(
+                    to: new PhoneNumber(toNumber),
+                    from: new PhoneNumber("(902) 200-4649"),
+                    body: msgBody,
+                    provideFeedback: true,
+                    messagingServiceSid: "MG39f8de2144fa90b91a42cc373365ff81",
+             statusCallback: new Uri("https://miniscule-pull.000webhostapp.com/index.php"));
               }
             //Ici , je desire lire les status dont statusCallback de l'API a envoyer
 
@@ -198,6 +207,21 @@ namespace SendSMSCharp
         private void sendMsg_Click(object sender, EventArgs e)
         {
             button1_Click(sender, e);
+        }
+
+        private void downloadResult_Click(object sender, EventArgs e)
+        {
+            ssid = "ACd0dfdee5cbece2e6b4226715cc1b7312";
+            token = "f3ddb423d44f0158ffdf245d0f865c47";
+            if (!String.IsNullOrEmpty(ssid)&& !String.IsNullOrEmpty(token))
+            {
+                TwilioResult results = new TwilioResult();
+                results.downloadCSVResult(ssid,token);
+            }
+            else
+                MessageBox.Show("SSID cannot be empty , please send sms first !");
+
+
         }
     }
 }

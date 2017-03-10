@@ -1,0 +1,9 @@
+C:\Users\bassel\documents\visual studio 2015\Projects\SendSMSCharp\WindowsService\bin\Release\WindowsService.exe.config
+C:\Users\bassel\documents\visual studio 2015\Projects\SendSMSCharp\WindowsService\bin\Release\WindowsService.exe
+C:\Users\bassel\documents\visual studio 2015\Projects\SendSMSCharp\WindowsService\bin\Release\WindowsService.pdb
+C:\Users\bassel\documents\visual studio 2015\Projects\SendSMSCharp\WindowsService\obj\Release\WindowsService.exe
+C:\Users\bassel\documents\visual studio 2015\Projects\SendSMSCharp\WindowsService\obj\Release\WindowsService.pdb
+C:\Users\bassel\documents\visual studio 2015\Projects\SendSMSCharp\WindowsService\bin\Release\HttpServer.dll
+C:\Users\bassel\documents\visual studio 2015\Projects\SendSMSCharp\WindowsService\bin\Release\HttpServer.pdb
+C:\Users\bassel\documents\visual studio 2015\Projects\SendSMSCharp\WindowsService\bin\Release\HttpServer.xml
+C:\Users\bassel\documents\visual studio 2015\Projects\SendSMSCharp\WindowsService\obj\Release\WindowsService.csprojResolveAssemblyReference.cache

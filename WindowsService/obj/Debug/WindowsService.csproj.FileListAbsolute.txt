@@ -1,0 +1,8 @@
+C:\Users\bassel\documents\visual studio 2015\Projects\SendSMSCharp\WindowsService\bin\Debug\WindowsService.exe.config
+C:\Users\bassel\documents\visual studio 2015\Projects\SendSMSCharp\WindowsService\bin\Debug\WindowsService.exe
+C:\Users\bassel\documents\visual studio 2015\Projects\SendSMSCharp\WindowsService\bin\Debug\WindowsService.pdb
+C:\Users\bassel\documents\visual studio 2015\Projects\SendSMSCharp\WindowsService\bin\Debug\HttpServer.dll
+C:\Users\bassel\documents\visual studio 2015\Projects\SendSMSCharp\WindowsService\bin\Debug\HttpServer.pdb
+C:\Users\bassel\documents\visual studio 2015\Projects\SendSMSCharp\WindowsService\bin\Debug\HttpServer.xml
+C:\Users\bassel\documents\visual studio 2015\Projects\SendSMSCharp\WindowsService\obj\Debug\WindowsService.exe
+C:\Users\bassel\documents\visual studio 2015\Projects\SendSMSCharp\WindowsService\obj\Debug\WindowsService.pdb

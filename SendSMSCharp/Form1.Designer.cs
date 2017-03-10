@@ -37,7 +37,6 @@
             this.twilioNumberBox = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.msgBOX = new System.Windows.Forms.TextBox();
-            this.webBrowserBOX = new System.Windows.Forms.WebBrowser();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
@@ -49,7 +48,7 @@
             this.sendMsg.TabIndex = 0;
             this.sendMsg.Text = "Send";
             this.sendMsg.UseVisualStyleBackColor = true;
-            this.sendMsg.Click += new System.EventHandler((sender, e) => this.button1_Click(sender, e));
+            this.sendMsg.Click += new System.EventHandler(this.sendMsg_Click);
             // 
             // label1
             // 
@@ -121,14 +120,6 @@
             this.msgBOX.Size = new System.Drawing.Size(183, 301);
             this.msgBOX.TabIndex = 8;
             // 
-            // webBrowserBOX
-            // 
-            this.webBrowserBOX.Location = new System.Drawing.Point(434, 12);
-            this.webBrowserBOX.MinimumSize = new System.Drawing.Size(20, 20);
-            this.webBrowserBOX.Name = "webBrowserBOX";
-            this.webBrowserBOX.Size = new System.Drawing.Size(514, 286);
-            this.webBrowserBOX.TabIndex = 15;
-            // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
@@ -143,9 +134,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(975, 353);
+            this.ClientSize = new System.Drawing.Size(475, 343);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.webBrowserBOX);
             this.Controls.Add(this.msgBOX);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.twilioNumberBox);
@@ -174,7 +164,6 @@
         private System.Windows.Forms.TextBox twilioNumberBox;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox msgBOX;
-        private System.Windows.Forms.WebBrowser webBrowserBOX;
         private System.Windows.Forms.ComboBox comboBox1;
     }
 }

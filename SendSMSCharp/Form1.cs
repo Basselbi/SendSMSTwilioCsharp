@@ -35,7 +35,7 @@ namespace SendSMSCharp
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            webBrowserBOX.Navigate(new Uri("http://localhost:5000/"));
+        //    webBrowserBOX.Navigate(new Uri("http://localhost:5000/"));
 //            RequestBin req = new RequestBin();
 //          req.test();
             msgBOX.Multiline = true;
@@ -194,6 +194,11 @@ namespace SendSMSCharp
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void sendMsg_Click(object sender, EventArgs e)
+        {
+            button1_Click(sender, e);
         }
     }
 }

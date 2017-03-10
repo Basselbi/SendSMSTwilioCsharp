@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SendSMSCharp", "SendSMSCharp\SendSMSCharp.csproj", "{D9C0E05A-C2EB-49C2-B0B6-225CAEDB921F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsService", "WindowsService\WindowsService.csproj", "{ADC437CE-FAC7-4AEC-8394-8721C3D1171E}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupWizard", "SetupWizard\SetupWizard.vdproj", "{ED6F1503-9A35-46F8-A436-FDEE56095F12}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,8 @@ Global
 		{D9C0E05A-C2EB-49C2-B0B6-225CAEDB921F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9C0E05A-C2EB-49C2-B0B6-225CAEDB921F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9C0E05A-C2EB-49C2-B0B6-225CAEDB921F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{ADC437CE-FAC7-4AEC-8394-8721C3D1171E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ADC437CE-FAC7-4AEC-8394-8721C3D1171E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ADC437CE-FAC7-4AEC-8394-8721C3D1171E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{ADC437CE-FAC7-4AEC-8394-8721C3D1171E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED6F1503-9A35-46F8-A436-FDEE56095F12}.Debug|Any CPU.ActiveCfg = Debug
+		{ED6F1503-9A35-46F8-A436-FDEE56095F12}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

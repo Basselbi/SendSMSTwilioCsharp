@@ -17,7 +17,6 @@ using Twilio.Clients;
 using Twilio.Rest.Api.V2010.Account;
 using Twilio.Rest.Api.V2010.Account.Message;
 using Twilio.Types;
-using WindowsService;
 
 
 namespace SendSMSCharp

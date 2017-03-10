@@ -157,12 +157,6 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\WindowsService\WindowsService.csproj">
-      <Project>{adc437ce-fac7-4aec-8394-8721c3d1171e}</Project>
-      <Name>WindowsService</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="HTMLPage1.html" />
     <None Include="Resources\sms-alt-icon.png" />
   </ItemGroup>

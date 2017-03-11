@@ -31,6 +31,7 @@ namespace SendSMSCharp
         private string s = "";
         private string ssid = "";
         private string token = "";
+        private string serviceSID = "";
         public Form1()
         {
             InitializeComponent();
@@ -62,11 +63,9 @@ namespace SendSMSCharp
         {
               ssid = twilioSSIDBox.Text;
               token = twilioTokenBox.Text;
+              serviceSID = serviceSIDBox.Text;
              string number = twilioNumberBox.Text;
-           
-            
-
-            
+          
              if (String.IsNullOrEmpty(ssid))
             {
                 MessageBox.Show("You need to enter a Twilio Account SID you can find it at https://www.twilio.com/console");
@@ -91,7 +90,7 @@ namespace SendSMSCharp
 
                         excelFile.readExcelFile(path, Convert.ToChar(s));
                         listNumeroTelephon = excelFile.NumberListFormatted.ToList();
-                        sendSMS(ssid, token, number, listNumeroTelephon, msgBOX.Text);
+                        sendSMS(ssid, token, number, listNumeroTelephon, msgBOX.Text, serviceSID);
                         sendMsg.Text = "Sent!";
                         sendMsg.BackColor = Color.LimeGreen;
                     }
@@ -109,25 +108,33 @@ namespace SendSMSCharp
         }
 
        
-        public void sendSMS(string ssid, string token , string fromNumber, List<string>TOnumbersList ,string msgBody )
+        public void sendSMS(string ssid, string token , string fromNumber, List<string>TOnumbersList ,string msgBody ,string serviceSID)
         {
-           TwilioClient.Init("ACd0dfdee5cbece2e6b4226715cc1b7312", "f3ddb423d44f0158ffdf245d0f865c47");
+           TwilioClient.Init(ssid, token);
 
             //var twilio = new TwilioRestClient("ACd0dfdee5cbece2e6b4226715cc1b7312", "f3ddb423d44f0158ffdf245d0f865c47");
-
 
             foreach (var toNumber in TOnumbersList)
             {
 
-
-                var message = MessageResource.Create(
-                    to: new PhoneNumber(toNumber),
-                    from: new PhoneNumber("(902) 200-4649"),
-                    body: msgBody,
-                    provideFeedback: true,
-                    messagingServiceSid: "MG39f8de2144fa90b91a42cc373365ff81",
-             statusCallback: new Uri("https://miniscule-pull.000webhostapp.com/index.php"));
-              }
+                if (!String.IsNullOrEmpty(serviceSID))
+                {
+                    var message = MessageResource.Create(
+                        to: new PhoneNumber(toNumber),
+                        from: new PhoneNumber(fromNumber),
+                        body: msgBody,
+                        provideFeedback: true,
+                        messagingServiceSid: serviceSID);
+                }
+                else
+                {
+                    var message = MessageResource.Create(
+                       to: new PhoneNumber(toNumber),
+                       from: new PhoneNumber(fromNumber),
+                       body: msgBody,
+                       provideFeedback: true);
+                }
+            }
             //Ici , je desire lire les status dont statusCallback de l'API a envoyer
 
         }
@@ -211,8 +218,9 @@ namespace SendSMSCharp
 
         private void downloadResult_Click(object sender, EventArgs e)
         {
-            ssid = "ACd0dfdee5cbece2e6b4226715cc1b7312";
-            token = "f3ddb423d44f0158ffdf245d0f865c47";
+            /* ssid = "ACd0dfdee5cbece2e6b4226715cc1b7312";
+             token = "f3ddb423d44f0158ffdf245d0f865c47";
+           */
             if (!String.IsNullOrEmpty(ssid)&& !String.IsNullOrEmpty(token))
             {
                 TwilioResult results = new TwilioResult();

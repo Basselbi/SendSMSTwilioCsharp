@@ -39,13 +39,16 @@
             this.msgBOX = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.downloadResult = new System.Windows.Forms.Button();
+            this.serviceSIDBox = new System.Windows.Forms.TextBox();
+            this.did = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // sendMsg
             // 
-            this.sendMsg.Location = new System.Drawing.Point(94, 238);
+            this.sendMsg.Location = new System.Drawing.Point(94, 279);
             this.sendMsg.Name = "sendMsg";
-            this.sendMsg.Size = new System.Drawing.Size(75, 23);
+            this.sendMsg.Size = new System.Drawing.Size(136, 23);
             this.sendMsg.TabIndex = 0;
             this.sendMsg.Text = "Send";
             this.sendMsg.UseVisualStyleBackColor = true;
@@ -82,28 +85,28 @@
             // 
             this.twilioSSIDBox.Location = new System.Drawing.Point(94, 80);
             this.twilioSSIDBox.Name = "twilioSSIDBox";
-            this.twilioSSIDBox.Size = new System.Drawing.Size(100, 20);
+            this.twilioSSIDBox.Size = new System.Drawing.Size(136, 20);
             this.twilioSSIDBox.TabIndex = 4;
             // 
             // twilioTokenBox
             // 
             this.twilioTokenBox.Location = new System.Drawing.Point(94, 112);
             this.twilioTokenBox.Name = "twilioTokenBox";
-            this.twilioTokenBox.Size = new System.Drawing.Size(100, 20);
+            this.twilioTokenBox.Size = new System.Drawing.Size(136, 20);
             this.twilioTokenBox.TabIndex = 5;
             // 
             // twilioNumberBox
             // 
             this.twilioNumberBox.Location = new System.Drawing.Point(94, 140);
             this.twilioNumberBox.Name = "twilioNumberBox";
-            this.twilioNumberBox.Size = new System.Drawing.Size(100, 20);
+            this.twilioNumberBox.Size = new System.Drawing.Size(136, 20);
             this.twilioNumberBox.TabIndex = 6;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(65, 182);
+            this.button2.Location = new System.Drawing.Point(94, 214);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(157, 23);
+            this.button2.Size = new System.Drawing.Size(136, 23);
             this.button2.TabIndex = 7;
             this.button2.Text = "Upload Excel File";
             this.button2.UseVisualStyleBackColor = true;
@@ -121,28 +124,56 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(73, 211);
+            this.comboBox1.Location = new System.Drawing.Point(94, 252);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.Size = new System.Drawing.Size(43, 21);
             this.comboBox1.Sorted = true;
             this.comboBox1.TabIndex = 16;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // downloadResult
             // 
-            this.downloadResult.Location = new System.Drawing.Point(73, 279);
+            this.downloadResult.Location = new System.Drawing.Point(94, 308);
             this.downloadResult.Name = "downloadResult";
-            this.downloadResult.Size = new System.Drawing.Size(104, 23);
+            this.downloadResult.Size = new System.Drawing.Size(136, 23);
             this.downloadResult.TabIndex = 17;
             this.downloadResult.Text = "Dowload logs";
             this.downloadResult.UseVisualStyleBackColor = true;
             this.downloadResult.Click += new System.EventHandler(this.downloadResult_Click);
+            // 
+            // serviceSIDBox
+            // 
+            this.serviceSIDBox.Location = new System.Drawing.Point(94, 176);
+            this.serviceSIDBox.Name = "serviceSIDBox";
+            this.serviceSIDBox.Size = new System.Drawing.Size(136, 20);
+            this.serviceSIDBox.TabIndex = 18;
+            // 
+            // did
+            // 
+            this.did.AutoSize = true;
+            this.did.Location = new System.Drawing.Point(13, 179);
+            this.did.Name = "did";
+            this.did.Size = new System.Drawing.Size(67, 13);
+            this.did.TabIndex = 19;
+            this.did.Text = "Service SID ";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(12, 252);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(71, 13);
+            this.label4.TabIndex = 20;
+            this.label4.Text = "Excel Column";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(475, 343);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.did);
+            this.Controls.Add(this.serviceSIDBox);
             this.Controls.Add(this.downloadResult);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.msgBOX);
@@ -175,6 +206,9 @@
         private System.Windows.Forms.TextBox msgBOX;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button downloadResult;
+        private System.Windows.Forms.TextBox serviceSIDBox;
+        private System.Windows.Forms.Label did;
+        private System.Windows.Forms.Label label4;
     }
 }
 
